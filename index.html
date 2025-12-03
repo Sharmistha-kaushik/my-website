@@ -1,0 +1,216 @@
+<!--  
+  SUPER PREMIUM UI — For Shubhi  
+  Tailwind ✓  Animations ✓  Glassmorphism ✓  Gradients ✓  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shubhi Designs – Premium UI</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .glass {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-orange-100 via-white to-orange-50 text-slate-900">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 w-full glass z-50 shadow">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-extrabold bg-gradient-to-r from-orange-600 to-orange-400 text-transparent bg-clip-text">
+        Shubhi Designs
+      </h1>
+
+      <ul class="hidden md:flex gap-8 font-medium">
+        <li><a href="#hero" class="hover:text-orange-600 transition">Home</a></li>
+        <li><a href="#features" class="hover:text-orange-600 transition">Features</a></li>
+        <li><a href="#" class="hover:text-orange-600 transition">Pricing</a></li>
+        <li><a href="#contact" class="hover:text-orange-600 transition">Contact</a></li>
+      </ul>
+
+      <button id="menuBtn" class="md:hidden">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden md:hidden px-6 pb-4 bg-white shadow">
+      <a href="#hero" class="block py-2">Home</a>
+      <a href="#features" class="block py-2">Features</a>
+      <a href="#" class="block py-2">Pricing</a>
+      <a href="#contact" class="block py-2">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="pt-36 pb-24">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+      <div class="animate-fadeInUp">
+        
+        <h2 class="text-6xl font-extrabold leading-tight text-slate-900">
+          Build <span class="bg-gradient-to-r from-orange-600 to-orange-400 text-transparent bg-clip-text">
+            Stunning UI
+          </span> With Modern Design.
+        </h2>
+
+        <p class="mt-5 text-xl text-slate-600">
+          Experience premium design, gradients, animations & perfect responsiveness — crafted for real production.
+        </p>
+
+        <div class="mt-8 flex gap-4">
+          <a href="#contact" 
+            class="bg-gradient-to-r from-orange-600 to-orange-400 text-white px-8 py-3 rounded-xl shadow-lg hover:opacity-90">
+            Get Started
+          </a>
+
+          <a href="#features" 
+            class="px-8 py-3 rounded-xl border border-orange-500 text-orange-600 hover:bg-orange-50">
+            Explore Features
+          </a>
+        </div>
+      </div>
+
+      <div class="relative animate-fadeIn">
+        <div class="absolute top-0 left-0 w-full h-full bg-orange-300 opacity-30 blur-3xl rounded-full"></div>
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" 
+             class="relative rounded-3xl shadow-2xl">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+      <h3 class="text-4xl font-bold mb-14">
+        Why We're Better
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+        <div class="p-10 rounded-3xl shadow-xl bg-gradient-to-br from-orange-50 to-white hover:shadow-2xl transition">
+          <div class="w-16 h-16 flex items-center justify-center bg-orange-100 text-orange-600 rounded-2xl text-3xl">
+            ✓
+          </div>
+          <h4 class="text-2xl font-semibold mt-4">Clean Code</h4>
+          <p class="text-slate-600 mt-2">High-quality, scalable, reusable components.</p>
+        </div>
+
+        <div class="p-10 rounded-3xl shadow-xl bg-gradient-to-br from-orange-50 to-white hover:shadow-2xl transition">
+          <div class="w-16 h-16 flex items-center justify-center bg-orange-100 text-orange-600 rounded-2xl text-3xl">
+            📱
+          </div>
+          <h4 class="text-2xl font-semibold mt-4">Fully Responsive</h4>
+          <p class="text-slate-600 mt-2">Pixel-perfect design for all devices.</p>
+        </div>
+
+        <div class="p-10 rounded-3xl shadow-xl bg-gradient-to-br from-orange-50 to-white hover:shadow-2xl transition">
+          <div class="w-16 h-16 flex items-center justify-center bg-orange-100 text-orange-600 rounded-2xl text-3xl">
+            ⚡
+          </div>
+          <h4 class="text-2xl font-semibold mt-4">Ultra Fast</h4>
+          <p class="text-slate-600 mt-2">Quick delivery with top-tier performance.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-6">
+      
+      <h3 class="text-4xl font-bold text-center mb-10">Let’s Work Together</h3>
+
+      <form class="bg-white p-10 rounded-3xl shadow-2xl space-y-6">
+        
+        <div>
+          <label class="font-semibold">Your Name</label>
+          <input type="text" required class="w-full p-3 mt-1 border rounded-xl focus:ring-2 focus:ring-orange-600">
+        </div>
+
+        <div>
+          <label class="font-semibold">Email</label>
+          <input type="email" required class="w-full p-3 mt-1 border rounded-xl focus:ring-2 focus:ring-orange-600">
+        </div>
+
+        <div>
+          <label class="font-semibold">Subject</label>
+          <select class="w-full p-3 mt-1 border rounded-xl">
+            <option>Project Inquiry</option>
+            <option>Support</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="font-semibold">Message</label>
+          <textarea rows="5" class="w-full p-3 mt-1 border rounded-xl focus:ring-2 focus:ring-orange-600"></textarea>
+        </div>
+
+        <button class="w-full bg-gradient-to-r from-orange-600 to-orange-400 text-white py-3 rounded-xl text-lg font-semibold hover:opacity-90">
+          Send Message
+        </button>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-14">
+
+      <div>
+        <h4 class="text-3xl font-bold mb-4">Shubhi Designs</h4>
+        <p class="text-slate-400">
+          Delivering premium UI experiences with modern aesthetics.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="font-bold mb-4 text-xl">Quick Links</h4>
+        <ul class="space-y-2 text-slate-300">
+          <li><a href="#hero" class="hover:text-orange-400">Home</a></li>
+          <li><a href="#features" class="hover:text-orange-400">Features</a></li>
+          <li><a href="#contact" class="hover:text-orange-400">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold mb-4 text-xl">Follow Us</h4>
+        <div class="flex gap-5 text-3xl">
+          <a href="#" class="hover:text-orange-400">🐦</a>
+          <a href="#" class="hover:text-orange-400">💻</a>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="text-center text-slate-500 mt-12">
+      © 2025 Shubhi Designs. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- Mobile Menu JS -->
+  <script>
+    document.getElementById("menuBtn").onclick = () => {
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+    };
+  </script>
+
+</body>
+</html>
